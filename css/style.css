@@ -1,0 +1,465 @@
+body {
+    background: black;
+}
+.content{
+    background: white;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header{
+    padding-top: 50px;
+}
+
+nav {
+    background-color: #F2F3F7;
+    text-align: center;
+}
+footer{
+    background-color: #111111;
+    padding: 80px 150px;
+}
+footer:after{
+    content: "";
+    display: table;
+    clear: both;
+
+}
+
+ul.breadcrumb {
+    padding: 10px 0;
+    list-style: none;
+    margin: 5px auto;
+
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 15px;
+}
+ul.breadcrumb li+li:before {
+    padding: 0px 8px;
+    color: black;
+    content: ">";
+}
+ul.breadcrumb li a {
+    color: black;
+    text-decoration: none;
+}
+ul.links {
+    padding: 10px 0;
+    list-style: none;
+    margin: 5px auto;
+
+}
+ul.links li {
+    display: inline;
+    font-size: 12px;
+}
+
+ul.links li a {
+    color: black;
+}
+ul.links li+li:before {
+    padding: 0px 4px;
+    color: black;
+    content: " ";
+}
+
+section.main-section {
+    margin: 40px auto;
+    max-width: 1050px;
+    height: auto;
+    min-height: 100px;
+}
+section.main-section h1 {
+    font-size: 50px;
+}
+
+.right-section > h2{
+    margin-bottom: 0;
+}
+
+.right-section > h5{
+    margin-top: 0;
+}
+.main-section-links > div.info{
+    float: left;
+    color: darkgray;
+    padding: 26px;
+    background-image: url("../img/location.png");
+    background-repeat: no-repeat;
+    font-size: 15px;
+    background-position-y: 20px;
+}
+.main-section-links > span > img{
+    height: 80%;
+}
+.main-section-links{
+    max-height: 100px;
+}
+.main-section-links:after{
+    content: "";
+    display: table;
+    clear: both
+}
+
+.left-links-div{
+    float: left;
+}
+.right-section{
+    box-sizing: border-box;
+    float: left;
+    width: 65%;
+    padding-right: 10px;
+}
+.left-section{
+    box-sizing: border-box;
+    float: left;
+    width: 33%;
+    padding-left: 10px;
+}
+duv.overview{
+    float: none;
+    margin: 20px 0;
+}
+
+img.header-img{
+    width: 100%;
+}
+
+img.nav-image{
+    position: relative;
+
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: darkred;
+    color: white;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    margin-left: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: lightgrey;
+    color: black;
+    font-weight: bold;
+    border-top: black 3px solid;
+
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 12px 40px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+section.tabs{
+    background-color: lightgrey;
+    overflow: overlay;
+}
+section.tabs .active{
+    display: block;
+}
+div.price{
+    margin-top: 20px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+div.price .headline-2{
+    font-size: 26px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+div.specifications{
+    background-color: #F2F3F7;
+    padding: 20px;
+}
+div.row-spec{
+    border-bottom: #999999 1px solid;
+    padding: 25px 0 5px 0;
+    height: 25px;
+}
+div.row-spec .left{
+    float: left;
+    color: #999999;
+}
+div.row-spec .right{
+    float: right;
+
+}
+div.infos{
+    border: lightgrey 2px solid;
+    padding: 14px 10px 5px 10px;
+    height: 25px;
+    margin: 15px 0;
+    background-image: url('../img/fuel.png');
+    background-repeat: no-repeat;
+    background-position-y: 1px;
+}
+div.infos .left{
+    float: left;
+    padding-left: 30px;
+
+}
+
+div.infos .right{
+    float: right;
+    color: red;
+}
+div.infos1{
+    border: lightgrey 2px solid;
+    padding: 14px 10px 5px 10px;
+    height: 25px;
+    margin: 15px 0;
+    background-image: url('../img/car2.png');
+    background-repeat: no-repeat;
+    background-position-y: 1px;
+}
+div.infos1 .left{
+    float: left;
+    padding-left: 30px;
+
+}
+
+div.infos1 .right{
+    float: right;
+    color: red;
+}
+div.info-number{
+    height: 90px;
+    background-color: #111111;
+    border-bottom: red 2px solid;
+    color: white;
+}
+div.info-number:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+div.info-number div{
+    float: left;
+    padding: 20px;
+
+}
+div.info-number div>i{
+     font-size: 50px;
+ }
+div.info-number div>span{
+    font-size: 20px;
+}
+div.form-wrapper{
+    background-image: url('../img/calc.png');
+    background-repeat: no-repeat;
+    background-position-y: 25px;
+    border: lightgrey 2px solid;
+    padding: 10px 60px;
+    margin-top: 30px;
+
+}
+div.form-wrapper p{
+    margin-top: 0px;
+}
+div.form-wrapper h4{
+    margin-bottom: 2px;
+}
+input[type=text] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+form > label{
+    font-size: 12px;
+    font-weight: bold;
+}
+input[type=button]{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+div.article {
+    float: left;
+    width: 33.33%;
+    box-sizing: border-box;
+    padding-right: 20px;
+    position: relative;
+}
+div.article > img{
+    width: 100%;
+    height: 190px;
+}
+div.row-articles:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+div.article div.price{
+    float: left;
+    position: absolute;
+    right: 25px;
+    top: 110px;
+    z-index: 1000;
+    background-color: red;
+    padding: 5px;
+    color: white;
+}
+div.article div.price span.headline-2{
+    font-size: 24px;
+}
+div.spec-article-row{
+    border: 1px lightgrey solid;
+    width: 100%;
+}
+div.spec-article-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+div.spec-article{
+    float: left;
+    padding: 12px 12px;
+    box-sizing: border-box;
+    text-align: center;
+    border-right: 1px lightgrey solid;
+    color: lightgrey;
+}
+div.spec-article-row > div.spec-article:nth-child(4) {
+    border-right: 0px lightgrey solid;
+}
+div.article h3:before{
+    content: url("../img/stripe.png");
+    margin-right: 15px;
+}
+footer div.four-colunm{
+    float: left;
+    color: gray;
+    width: 25%;
+    box-sizing: border-box;
+    padding-right: 15px;
+
+}
+div.four-colunm i{
+    margin: 10px 10px;
+}
+div.four-colunm h5{
+    color: white;
+    font-size: 14px;
+}
+div.four-colunm h6{
+    color: white;
+    font-size: 14px;
+    text-align: center;
+}
+div.four-colunm div.color-white{
+    color: white;
+
+}
+div.four-colunm h5:before{
+    content: "-";
+    margin-right: 15px;
+    color: red;
+}
+div.two-colunm-row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+div.two-colunm{
+    float: left;
+    width: 50%;
+}
+
+div.two-colunm ul {
+    list-style: none;
+    padding-left: 10px;
+
+
+}
+div.two-colunm li{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+div.two-colunm li:before {
+    margin-right: 8px;
+    color: white;
+    content: ">";
+}
+span.red-color{
+    color: red;
+}
+
+@media only screen and (max-width:620px) {
+
+    body {
+        background: white;
+    }
+    .right-section, .left-section{
+        width:100%;
+        padding: 0 20px;
+    }
+    footer div.four-colunm{
+        padding: 0 20px;
+        width: 100%;
+    }
+    div.article {
+        padding: 0 20px;
+        width: 100%;
+    }
+    .main-section .headline-1{
+        text-align: center;
+    }
+    .bx-wrapper{
+        margin-top: 30px;
+    }
+    .tablinks{
+        width: 100%;
+    }
+    .tab button{
+        margin: 0;
+    }
+    .tab button.active {
+        margin-left: 10px;
+        width: 95%;
+    }
+    header{
+        position: relative;
+        height: 50px;
+    }
+    header img.header-img{
+        position: absolute;
+        width: 150%;
+        left: -140px;
+        top:20px;
+        margin-right: 50px;
+    }
+
+    footer{
+        padding:20px 5px;
+    }
+}
+
+
+
+
